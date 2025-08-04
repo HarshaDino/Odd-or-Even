@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <title>Odd or Even Game</title>
+</head>
+<body>
+  <h1>Odd or Even Game</h1>
+  <div class="wrapper">
+    <div class="buttons">
+      <label for="oddbtn">Odd</label>
+      <input type="radio" id="oddbtn" name="oddeven" value="odd" class="oddevenbtn">
+      <label for="evenbtn">Even</label>
+      <input type="radio" id="evenbtn" name="oddeven" value="even" class="oddevenbtn">
+    </div>
+
+    <div class="num">
+      <label for="number">Enter a number:</label>
+      <input type="number" id="number" name="num">
+    </div>
+
+    <div class="start">
+      <button id="startGameButton">🟢</button>
+    </div>
+
+    <div class="details">
+      <div id="score">Score:</div>
+      <div id="sum"></div>
+      <div id="hands"></div>
+      <div id="result"></div>
+      <div id="player-score">0</div>
+    </div>
+
+    <div class="reset">
+      <button id="endGameButton">🔴</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
